@@ -282,7 +282,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'God'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis person is the second most powerful after my God."
+        text += "\n\nThe Disaster level of this person is "Hero"."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nThe Hunter skill of this person is 'S-RANK Dragon'."
@@ -298,7 +298,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/Phoenix_Empire/93">?</a>]'.format(
+        text += ' [<a href="https://t.me/OnePunchUpdates/192">?</a>]'.format(
             bot.username)
 
     try:
@@ -412,7 +412,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>❟✿❟Current stats of Kazuko❟✿❟</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>❟✿❟Current stats of Royzu🔥</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
@@ -522,9 +522,6 @@ When marked as AFK, any mentions will be replied to with a message to say you're
  ➩ /setbio This user is a wolf` (reply to the user)
 *Overall Information about you:*
  ❍ /info*:* get information about a user. 
- 
-*What is that health thingy?*
- Come and see [HP System explained](https://t.me/Phoenix_Empire/107)
 """
 
 
