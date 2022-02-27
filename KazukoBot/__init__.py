@@ -277,6 +277,6 @@ BOT_MENTION = bottie.mention
 end_credits = """
 INFO GATHERED!
 Client: Royzu Pyro
-Copyright: (c) 2021 KazukoBot
+Copyright: (c) 2021 RoyzuRobot
 """
 print(end_credits)
