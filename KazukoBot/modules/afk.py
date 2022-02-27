@@ -38,7 +38,7 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("{} is now afk!{}".format(fname, notice))
+        update.effective_message.reply_text("Okay {}, Goodbye👋🏻!{}".format(fname, notice))
     except BadRequest:
         pass
 
@@ -59,11 +59,10 @@ def no_longer_afk(update: Update, context: CallbackContext):
         try:
             options = [
                 "{} is back to alive!",
-                "{} is back!",
-                "{} is now in the chat!",
+                "Hey look, {} is back!",
+                "Finally, {} is now in the chat!",
                 "{} is awake!",
                 "{} is back online!",
-                "{} is finally here!",
                 "Welcome back! {}",
                 "Where is {}?\nIn the chat!",
             ]
@@ -129,17 +128,17 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
-            res = "{} is afk".format(fst_name)
+            res = "Hey friend, {} is afk".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is afk.\nReason: <code>{}</code>".format(
+            res = "Hey friend, {} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
 
 
 
-AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
+AFK_HANDLER = DisableAbleCommandHandler(["afk", "off", "bye"], afk)
 AFK_REGEX_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"^(?i)brb(.*)$"), afk, friendly="afk"
 )
