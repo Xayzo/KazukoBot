@@ -105,7 +105,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "❗ **Kazuko is not admin here..**\n__Give me ban permissions and retry, Ending FSub...__"
+                        "❗ **Royzu is not admin here..**\n__Give me ban permissions and retry, Ending FSub...__"
                     )
 
             except ChatAdminRequired:
@@ -175,7 +175,7 @@ def config(client, message):
 
 __help__ = """
 *Force Subscribe*
-• Kazuko can mute members who are not subscribed your channel until they subscribe
+• Royzu can mute members who are not subscribed your channel until they subscribe
 • When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup:*
 ❕First of all add me in the group as admin with ban users permission and in the channel as admin.
