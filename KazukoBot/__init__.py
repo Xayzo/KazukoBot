@@ -22,16 +22,16 @@ logging.basicConfig(
 
 
 #print(flag)
-log = logging.getLogger('[KazukoBot]')
+log = logging.getLogger('[Royzu]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 log.info("------------------------------")
 log.info("|   Loading repository...   |")
 log.info("------------------------------")
-log.info("[KAZUKO] Kazuko is starting. | Phoenix Empire Project. | Licensed under GPLv3.")
-log.info("[KAZUKO] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
-log.info("[KAZUKO] Project maintained by: github.com/heyaaman (t.me/heyaaman)")
+log.info("[ROYZU] Royzu is starting. | Dion Project. | Licensed under GPLv3.")
+log.info("[ROYZU] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
+log.info("[ROYZU] Project maintained by: github.com/Xayzo (t.me/Royzu)")
 log.info("------------------------")
-log.info("| Deploying Kazuko... |")
+log.info("|  Deploying Royzu.... |")
 log.info("------------------------")
 LOGGER = logging.getLogger(__name__)
 
@@ -200,13 +200,15 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1831008142)
-DEV_USERS.add(1821151467)
+DEV_USERS.add(1708159796)
+DEV_USERS.add(1878075436)
+DEV_USERS.add(1867048626)
+DEV_USERS.add(1037155568)
 
 # Pass if SpamWatch token not set.
 if SPAMWATCH is None:
     spamwtc = None
-    LOGGER.warning("[Kazuko] Invalid spamwatch api")
+    LOGGER.warning("[Royzu] Invalid spamwatch api")
 else:
     spamwtc = spamwatch.Client(SPAMWATCH)
 
@@ -274,7 +276,7 @@ BOT_MENTION = bottie.mention
 
 end_credits = """
 INFO GATHERED!
-Client: Kazuko Pyro
+Client: Royzu Pyro
 Copyright: (c) 2021 KazukoBot
 """
 print(end_credits)
