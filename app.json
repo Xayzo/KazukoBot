@@ -1,5 +1,5 @@
 {
-      "name": "KazukoBot",
+      "name": "Royzu Robot",
       "description": "Telegram group management bot.",
       "logo": "https://telegra.ph/file/ff90bfef47a81da8e8ab3.jpg",
       "keywords": [
@@ -9,7 +9,7 @@
          "manager",
          "kazuko"
       ],   
-   "repository": "https://github.com/heyaaman/KazukoBot.git",
+   "repository": "https://github.com/Xayzo/KazukoBot.git",
    "addons": [
       {
          "options": {
@@ -50,12 +50,12 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1821151467"
+         "value": "1780335957"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
          "required": true,
-         "value": ""
+         "value": "5153006433"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -67,12 +67,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "heyaaman"
+         "value": "Royzu"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "KazukoSupportChat"
+         "value": "DionSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -90,26 +90,26 @@
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-123456798910"
+         "value": "-1001534482313"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-123456798910"
+         "value": "-1001534482313"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "-xyz"
+         "value": "V7NS1NBFEL4X24L6"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "2AS711XS1O9B"
       },
       "API_OPENWEATHER": {
         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-        "value": "",
+        "value": "b84d0dea12baa6acf6c22f41cea472b5",
         "required": false
       },
       "DEV_USERS": {
@@ -182,11 +182,11 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you don't want just make it blank",
          "required": false,
-         "value": "https://t.me/heyaaman"
+         "value": "https://t.me/Royzu"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
-         "value": "True"
+         "value": "False"
       },
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
