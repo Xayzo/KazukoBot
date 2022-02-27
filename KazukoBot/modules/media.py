@@ -18,15 +18,9 @@ from KazukoBot.utils.pastebin import paste
 __mod_name__ = ""
 __help__ = """
 
-*AUDIO*
+*SONG*
 
-❍`/song` *:* To download the required song from YouTube (via name)
-❍`/ytmusic` *:* To Download Music from Youtube (via link)
-❍`/saavn` *:* To Download Music From Saavn.
-
-
-*LYRICS*
-
+❍`/song` *:* To download the required song from YouTube 
 ❍`/lyrics` *:* To Get Lyrics Of a Song.
 
 """
@@ -75,7 +69,7 @@ def download_youtube_audio(url: str):
     return [title, performer, duration, audio_file, thumbnail_file]
 
 
-@app.on_message(filters.command("ytmusic"))
+@app.on_message(filters.command("yutubmusic"))
 @capture_err
 async def music(_, message):
     global is_downloading
@@ -179,7 +173,7 @@ async def jssong(_, message):
 # Lyrics
 
 
-@app.on_message(filters.command("lyrics"))
+@app.on_message(filters.command("lirik"))
 async def lyrics_func(_, message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:**\n/lyrics [QUERY]")
